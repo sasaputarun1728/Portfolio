@@ -1,0 +1,498 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(14, 2, 2), rgb(86, 39, 60));
+    color: #fff;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, yellow, rgb(129, 210, 124));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #201f1f;
+    padding: 10px;
+    height: 30px;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to right, rgb(243, 216, 99), rgb(53, 179, 53));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* About Section */
+
+img {
+    border-radius: 50%;
+}
+
+#about {
+    padding: 20px;
+    margin: 60px 45px;
+    color: #fff;
+    /* background-color: #2c3e50;  */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image {
+    width: 36%;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-text {
+    width: 55%;
+    font-size: 1.2rem;
+    /* Adjust the width as needed */
+}
+
+.about-text h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(237, 237, 140), rgb(27, 30, 27));
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Bright orange heading */
+}
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#projects h2 {
+    background: linear-gradient(to right, rgb(237, 237, 140), rgb(27, 30, 27));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.project {
+    width: 390px;
+    /* Adjust the width of each project box */
+    height: 300px;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 40px;
+    margin-right: 20px;
+    /* Add margin between project boxes */
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    /* Display projects side by side */
+    vertical-align: top;
+    /* Align projects at the top */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+#projects .project {
+    /* border: 1px solid #ddd; */
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #201f1f;
+}
+
+.project .project h3 {
+    color: lightcoral;
+    /* Bright yellow heading */
+}
+
+.project-buttons1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 170px;
+    /* Added padding */
+}
+
+.project-buttons2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    /* Added padding */
+    padding-left: 170px;
+}
+
+.project h3 {
+    background: linear-gradient(to right, rgb(128, 230, 230), rgb(6, 6, 6));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.explore-button,
+.github-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: white;
+    padding: 1px 220px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.explore-button:hover,
+.github-button:hover {
+    background-color:rgb(63, 6, 70);
+    transform: scale(1.1);
+    /* Slightly increase size on hover */
+
+
+}
+
+.github-button {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.github-button i {
+    font-size: 24px;
+    /* Adjust size as needed */
+    color: white;
+    /* Change color to match your design */
+}
+
+.explore-button,
+.github-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+/* Style for Skills section */
+#skills {
+    text-align: center;
+    padding: 50px 0px;
+    margin: 0px 45px;
+    /* Adjust padding as needed */
+    /* background-color: #f9f9f9; Background color for the section */
+}
+
+#skills h2 {
+    background: linear-gradient(to right, rgb(214, 214, 83), rgb(27, 30, 27));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.skills-container {
+    max-width: 800px;
+    /* Limit the width of the skills container */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    display: flex;
+    justify-content: space-between;
+    /* Distribute skills columns with space between them */
+}
+
+.skill {
+    flex: 1;
+    /* Each skill column takes equal space */
+    padding: 20px;
+    background-color: #ffffff;
+    /* Background color for each skill column */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for depth */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+    transition: transform 0.3s ease-in-out;
+    /* Optional: Add hover effect */
+    margin-right: 20px;
+    /* Adjust margin between skill boxes */
+}
+
+.skill:last-child {
+    margin-right: 0;
+    /* Remove margin for the last skill box */
+}
+
+
+
+
+.skill h3 {
+    color: rgb(21, 112, 111);
+    /* Heading color */
+}
+
+.skill ul {
+    list-style-type: none;
+    /* Remove default list styles */
+    padding: 0;
+}
+
+.skill ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    /* Adjust font size */
+    color: #666666;
+    /* List item color */
+}
+
+.skill ul li:last-child {
+    margin-bottom: 0;
+    /* Remove margin bottom for last list item */
+}
+
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0px 45px;
+}
+
+#resume h2 {
+    background: linear-gradient(to right, rgb(214, 214, 83), rgb(27, 30, 27));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.resume-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.view-button,
+.download-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #51c4d3);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.view-button:hover,
+.download-button:hover {
+    animation: gradientShift 3s infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Contact Section */
+#contact {
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    margin: 60px 45px;
+    background-color: #201f1f;
+    /* Dark blue background */
+}
+
+#contact h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(237, 237, 140), rgb(27, 30, 27));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#contact a {
+    color: rgb(223, 174, 182);
+    /* Bright orange links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a {
+    line-height: 1.5;
+
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    /* Dark gray footer */
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        height: 330px;
+        max-width: none;
+        margin-bottom: 20px; /* Add margin between project boxes */
+    }
+
+    .project-buttons1,
+    .project-buttons2 {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; /* Reset padding for small screens */
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding-right: 40px;
+    }
+
+    .skill {
+        width: 80%;
+        margin-bottom: 20px; /* Add margin between skill boxes */
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .view-button,
+    .download-button {
+        width: 77%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        display: none;
+    }
+
+    .about-text h2,
+    #projects h2,
+    #skills h2,
+    #resume h2,
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .skill {
+        width: 100%;
+        margin-bottom: 10px; /* Ensure a small gap between skill boxes */
+    }
+}
